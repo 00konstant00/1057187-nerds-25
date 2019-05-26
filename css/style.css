@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  
+  background-color: #ffffff
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.site-navigation  {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee
+}
+
+.main-navigation,
+.user-navigation,
+.list-service,
+.footer-social-item {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #fb565a;
+  text-decoration: underline;
+}
+
+.service p {
+  color: #283136;
+}
+
+.service h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px
+  text-align: center;
+  color: #000000;
+  background-color: #fb565a;
+  vertical-align: middle;
+  border: none;
+}
+
+.button-red,
+.button-red:hover{
+  background-color: #fb565a;
+}
+
+.button-red:focus{
+  background-color: #e74246;
+}
+
+.button-red:active{
+  background-color: #d7373b;
+}
+
+.button-green,
+.button-green:hover {
+  background-color: #00ca74;
+}
+
+.button-green:focus{
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-yelow,
+.button-yelow:hover {
+  background-color: #efc84a;
+}
+
+.button-yelow:focus {
+  background-color: #eab534;
+}
+
+.button-yelow:active {
+  background-color: #e5a722;
+}
+
+.footer-social-item a:hover {
+  background-color: #e1e1e1;
+}
+
+.footer-social-item a:focus {
+   background-color: #e74246
+}
+
+.footer-social-item a:active {
+   background-color: #d7373b
+}
+
+.feedback h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.feedback-item label {
+  font-weight: 700;
+}
+
+.feedback input[type="text"],
+.feedback input[type="password"] {
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+}
+
+.feedback input[type="text"],
+.feedback input[type="password"]:hover {
+  border: 2px solid #d7dcde;
+}
+
+.feedback input[type="text"],
+.feedback input[type="password"]:focus {
+  border: 2px solid #000000
+
+.feedback input[type="text"],
+.feedback input[type="password"]:invalid {
+  border: 2px solid #e74246;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  font-size: 16;
+  line-height: 20px;
+}
+
+label {
+  color: b9b9b9;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #4d4d4d;
+}

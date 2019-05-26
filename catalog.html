@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class= "site-header">
@@ -14,7 +17,7 @@
       <ul class="main-navigation">
         <li><a href="station.html">студия</a></li>
         <li><a href="clients.html">клиенты</a></li>
-        <li class="site-navigation-current"><a href="shop.html">магазин</a></li>
+        <li><a href="shop.html">магазин</a></li>
         <li><a href="contacts.html">контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -27,22 +30,22 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
+          <legend>сетка:</legend>
           <ul class="grid-list">
-            <h3>сетка:</h3>
             <li>
-              <input type="radio" name="grid-list" id="filter-adaptive">
+              <input type="radio" name="grid-list" id="filter-adaptive" value="grid-adaptive">
               <label for="filter-adaptive">
                 Адаптивная
               </label>
             </li>
             <li>
-              <input type="radio" name="grid-list" id="filter-fixed">
+              <input type="radio" name="grid-list" id="filter-fixed" value="grid-fixed">
               <label for="filter-fixed">
                 Фиксированная
               </label>
             </li>
             <li>
-              <input type="radio" name="grid-list" id="filter-rubber">
+              <input type="radio" name="grid-list" id="filter-rubber" value="grid-rubber">
               <label for="filter-rubber">
                 Резиновая
               </label>
@@ -50,8 +53,8 @@
           </ul>
         </fieldset>
         <fieldset>
+          <legend>особенности:</legend>
           <ul class="peculiarity-list">
-            <h3>особенности:</h3>
             <li>
               <input type="checkbox" name="slide-list" id="filter-slider" checked>
               <label for="filter-slider">
@@ -83,7 +86,8 @@
               </label>
             </li>
           </ul>
-        </fieldset> 
+        </fieldset>
+        <button class="button" type="submit">Отправить</button> 
       </form>  
     </section>
     <section class="catalog">
