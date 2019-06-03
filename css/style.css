@@ -145,26 +145,51 @@ a {
   border: 2px solid #e74246;
 }
 
-.filters fieldset {
-  border: none;
-}
-
-.filters legend {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.filters ul {
-  list-style: none;
-  font-size: 16;
-  line-height: 20px;
-}
-
-label {
-  color: b9b9b9;
-}
 
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #4d4d4d;
+}
+
+.filter .gilter-grid {
+  border: none;
+}
+
+.filter .filter-property {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.catalog .catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

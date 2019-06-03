@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -26,10 +26,11 @@
     </nav> 
   </header>
   <main class="container">
+
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="filter-grid">
           <legend>сетка:</legend>
           <ul class="grid-list">
             <li>
@@ -52,7 +53,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-property">
           <legend>особенности:</legend>
           <ul class="peculiarity-list">
             <li>
@@ -90,6 +91,7 @@
         <button class="button" type="submit">Отправить</button> 
       </form>  
     </section>
+
     <section class="catalog">
       <h2 class="visually-hidden">Список готовых шаблонов</h2>
       <ul class="catalog-list">
