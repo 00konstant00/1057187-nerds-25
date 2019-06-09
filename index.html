@@ -9,11 +9,11 @@
 </head>
 <body>
 	<header class= "site-header">
+		<nav class="site-navigation">
 		<a class="site-header-logo">
 			<img src="img/nerds-logo.svg"
 			width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-		</a>	
-		<nav class="site-navigation">
+		</a>
 			<ul class="main-navigation">
 				<li><a href="station.html">студия</a></li>
 				<li><a href="clients.html">клиенты</a></li>
@@ -23,11 +23,12 @@
 			<ul class="user-navigation">
 				<li class="shopping-cart">корзина</li>
 			</ul>
-		</nav>  
-	</header>
+		</nav> 
+		</header>
 	<main class="container">
 		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-		<!--Здесь будет секция-->
+				<!--Здесь будет секция-->
+		<section class="slide"></section>		
 		<section class="service">
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="list-service">
@@ -60,7 +61,14 @@
 				</li>
 			</ul>
 		</section>
-		<section class="feedback">
+
+		<section class="about-us"></section>
+
+		<section class="work"></section>
+
+		<section class="map"></section>
+
+		<section class="pop-up">
 			<h2>Напишите нам</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 				<p class="feedback-item">
@@ -82,6 +90,7 @@
 					</label>
 				</p>
 				<button class="button" type="submit">Отправить</button>
+				<button class="close" type="button" name="close-button">Закрыть</button>
 			</form>
 		</section>
 	</main>
