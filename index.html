@@ -5,7 +5,7 @@
 	<title>HTML Academy: Нёрдс</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class= "site-header">
@@ -19,41 +19,70 @@
 				<li><a href="clients.html">клиенты</a></li>
 				<li><a href="catalog.html">магазин</a></li>
 				<li><a href="contacts.html">контакты</a></li>
+				
 			</ul>
 			<ul class="user-navigation">
-				<li class="shopping-cart">корзина</li>
+				<li class="shopping-cart"> <a class="login-link" href="#">корзина</a></li>
 			</ul>
 		</nav> 
 		</header>
-	<main class="container">
+	<main class="containers">
 		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-				<!--Здесь будет секция-->
-		<section class="slide"></section>		
+		<section class="slider">
+			<div class="container">
+				<h2 class="visually-hidden">Преимущества</h2>
+					<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+					<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+					<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+					<div class="slider-controls">
+						<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+						<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+						<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+					</div>
+					<ul class="slider-list">
+						<li class="slider-item">
+						  <h3>Долго, дорого,<br> скрупулезно.</h3>
+						  <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+						  <a class="slider-item-button button" href="#">Узнать больше</a>
+						</li>
+						<li class="slider-item">
+						  <h3>Любим математику как никто другой</h3>
+						  <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+						  <a class="slider-item-button button" href="#">Узнать больше</a>
+						</li>
+						<li class="slider-item">
+						  <h3>Только ночь,<br> только хардкор</h3>
+						  <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+						  <a class="slider-item-button button" href="#">Узнать больше</a>
+						</li>
+					</ul>  
+			</div>
+		</section>	
 		<section class="service">
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="list-service">
 				<li class="list-service-item">
-					<h3>веб-сайты</h3>
-					<img src="img/illustration-1.png" width="300" height="146" alt="Картинка ноутбук">
-					<p>
+					<img class="list-service-img" src="img/illustration-1.png" width="300" height="146" alt="Картинка ноутбук">
+					<h3 class="list-service-header">веб-сайты</h3>
+					<p class="list-service-description">
 						Мир никогда не будет прежним
 						после того как увидит ваш сайт
 					</p>
 					<a class="button button-red" href="catalog.html" aria-label="заказать сайт">заказать</a>
 				</li>
 				<li class="list-service-item">
-					<h3>приложения</h3>
-					<img src="img/illustration-2.png" width="300" height="146" alt="Картинка телефон">
-					<p>
+					<img class="list-service-img" src="img/illustration-2.png" width="300" height="146" alt="Картинка телефон">
+					<h3 class="list-service-header">приложения</h3>
+					<p class="list-service-description">
 						Покорите тор-10 приложений в
 						AppStore и Google Play
 					</p>
 					<a class="button button-green" href="catalog.html" aria-label="заказать приложение">заказать</a>
 				</li>
 				<li class="list-service-item">
-					<h3>презентации</h3>
-					<img src="img/illustration-3.png" width="300" height="146" alt="Картинка планшет">
-					<p>
+					<img class="list-service-img" src="img/illustration-3.png" width="300" height="146" alt="Картинка планшет">
+					<h3 class="list-service-header">презентации</h3>
+					<p class="list-service-description">
 						Вы даже не подозреваете,
 						насколько вы изумительны!
 					</p>
@@ -62,11 +91,89 @@
 			</ul>
 		</section>
 
-		<section class="about-us"></section>
+		<section class="about-us">
+			<div class="about-us-left">
+				<p class="abot-us-head">
+					Мы - маленькая, но гордая <br>дизайн-студия из Краснодара.
+				</p>
+				<p class="about-us-text">
+					Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>превыше креатива. Работаем не покладая рук, как роботы.
+				</p>
+				<ul>
+					<h3>выполняем заказы на разработку:</h3>
+					<li>
+						Веб-сайтов любой сложности
+					</li>
+					<li>
+						Мобильных приложений для IOS и Android
+					</li>
+					<li>
+						Слайдшоу и видео для корпоративных презентаций
+					</li>
+				</ul>
+			</div>
+			<div class="about-us-right">
+				<img class="about-us-right-picture" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании">
+				<h2>С 2004 года любим точность во всем:</h2>
+				<ul>	
+					<li>
+						<div class="about-us-right-numbers">
+							146%
+						</div>	
+						<div class="about-us-right-words">
+							Уровень самоотдачи
+						</div>
+					</li>
+					<li>
+						<div class="about-us-right-numbers">
+						100% 
+						</div>
+						<div class="about-us-right-words">
+						Соблюдение сроков
+						</div>
+					</li>
+					<li>
+						<div class="about-us-right-numbers">
+						50%
+						</div>
+						<div class="about-us-right-words">
+						Минимальная предоплата
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-		<section class="work"></section>
+		<section class="work">
+			<a href="#">
+			<img src="img/logo-1.png." width="199" height="68" alt="логотип компании html academy">
+			</a>
+			<a href="#">
+			<img src="img/logo-2.png." width="209" height="90" alt="логотип компании барбершоп Бородинский">
+			</a>
+			<a href="#">
+			<img src="img/logo-3.png." width="185" height="52" alt="логотип компании Пинк">
+			</a>
+			<a href="#">
+			<img src="img/logo-4.png." width="173" height="84" alt="логотип компании Мишка">
+			</a>
+		</section>
 
-		<section class="map"></section>
+		<section class="modal">
+			<img class="map" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
+			<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
+			<div class="modal-map">
+				<p class="modal-head">
+					NЁRDS DESIGN STUDIO
+				</p>
+				<p class="modal-text">
+					191186, Санкт-Петербург,<br> 
+					ул. Б. Конюшенная, д. 19/8<br>
+					тел. +7 (812) 275-75-75
+				</p>
+				<a class="button" href="#" aria-label="напишите нам"> напишите нам </a>
+			</div>
+		</section>
 
 		<section class="pop-up">
 			<h2>Напишите нам</h2>
@@ -96,9 +203,9 @@
 	</main>
 	<footer class="site-footer">
 		<ul class="footer-social-item">
-			<li><a class="social-button" href="#" aria-label="Наша дизайн студия в Вконтакте">Вконтакте</a></li>
-			<li><a class="social-button" href="#" aria-label="Наша дизайн студия в Фейсбук">Фейсбук</a></li>
-			<li><a class="social-button" href="#" aria-label="Наша дизайн студия в Инстаграм">Инстаграм</a></li>
+			<li><a class="social-button-v" href="#" aria-label="Наша дизайн студия в Вконтакте">Вконтакте</a></li>
+			<li><a class="social-button-f" href="#" aria-label="Наша дизайн студия в Фейсбук">Фейсбук</a></li>
+			<li><a class="social-butto-i" href="#" aria-label="Наша дизайн студия в Инстаграм">Инстаграм</a></li>
 		</ul>
 		<p class="footer-promo">
 			<b>Давайте дружить,это выгодно!</b>
