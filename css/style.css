@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -24,10 +25,17 @@ a {
   color: #000000;
 }
 
+
+.container-map {
+  width:1440px;
+  padding:0 20px;
+  margin: 0 -120px; 
+}
+
 .containers {
   width: 1200px;
   padding: 0 20px;
-  margin: 0 120px;
+  margin: 0 auto;
 }
 
 .site-navigation a {
@@ -79,7 +87,6 @@ a {
 
 .site-header {
   display: block;
-  width: 1440px;
   background-color: #eeeeee;
 }
 
@@ -126,7 +133,7 @@ a {
   display: flex;
   width: 1200px;
   padding: 0 20px;
-  margin: 0 120px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
@@ -139,16 +146,12 @@ a {
 }
 
 .slider {
-  width: 100%;
   position: relative;
-  background-color: #eeeeee;
 }
 
-.container {
-  display: block;
-  width: 1440px;
-  background-color: #eeeeee;
-  
+.slider-list {
+  padding:0;
+  margin: 0;
 }
 
 .slider-controls {
@@ -187,11 +190,7 @@ a {
   border-radius: 50%;
 }
 
-.slider-list {
-  margin: 0;
-  padding: 0 20px; 
-  list-style: none;
-}
+
 
 .slider-item {
   display: none;
@@ -201,19 +200,19 @@ a {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 78%;
+  background-position: 100%;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 620px;
+  background-position: 100%;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: 100%;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -248,7 +247,7 @@ a {
 .slider-item h3 {
   max-width: 600px;
   margin-top: -12px;
-  margin-left: 118px;
+  
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -256,7 +255,7 @@ a {
 
 .slider-item p {
   max-width: 430px;
-  margin-left: 119px;
+ 
   margin-top: -25px;
 }
 
@@ -266,7 +265,7 @@ a {
   height: 50px;
   padding: 13px 0;
   margin-top: 38px;
-  margin-left: 120px;
+  
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -523,11 +522,19 @@ a {
   opacity: 0.1;
 }
 
+.container-map {
+  display:block;
+  width:1440px;
+  padding:0;
+
+}
+
+
 .map {
   display:flex;
   position: relative;
-  min-width: 1440px;
-  margin-left: -140px;
+  width: 1440px; 
+  margin: 0;
   padding: 0;
 }
 
@@ -937,7 +944,8 @@ input[type=text] {
   display: flex;
   width:1160px;
   align-items:center;
-  margin-left: 140px;
+  margin: 0 auto;
+
   margin-top: 63px;
 }
 
