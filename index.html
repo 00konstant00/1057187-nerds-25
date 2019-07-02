@@ -9,6 +9,7 @@
 </head>
 <body>
 	<header class= "site-header">
+		<div class="containers">
 		<nav class="site-navigation">
 		<a class="site-header-logo">
 			<img src="img/nerds-logo.svg"
@@ -24,6 +25,7 @@
 				<li class="shopping-cart"> <a class="login-link" href="#">корзина</a></li>
 			</ul>
 		</nav>
+		</div>
 		<section class="slider">
 			<div class="containers">
 				<h2 class="visually-hidden">Преимущества</h2>
@@ -55,8 +57,9 @@
 			</div>
 		</section>	 
 	</header>
-	<main class="containers">
+	<main>
 		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+		<div class="containers">
 		<section class="service">
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="list-service">
@@ -144,23 +147,25 @@
 		</section>
 
 		<section class="work">
-			<a href="#">
-			<img src="img/logo-1.png." width="199" height="68" alt="логотип компании html academy">
+			<a href="https://htmlacademy.ru/intensive/htmlcss">
+			<img src="img/logo-1.png" width="199" height="68" alt="логотип компании html academy">
 			</a>
 			<a href="#">
-			<img src="img/logo-2.png." width="209" height="90" alt="логотип компании барбершоп Бородинский">
+			<img src="img/logo-2.png" width="209" height="90" alt="логотип компании барбершоп Бородинский">
 			</a>
 			<a href="#">
-			<img src="img/logo-3.png." width="185" height="52" alt="логотип компании Пинк">
+			<img src="img/logo-3.png" width="185" height="52" alt="логотип компании Пинк">
 			</a>
 			<a href="#">
-			<img src="img/logo-4.png." width="173" height="84" alt="логотип компании Мишка">
+			<img src="img/logo-4.png" width="173" height="84" alt="логотип компании Мишка">
 			</a>
 		</section>
-		<div class="container-map">
+		</div>
 		<section class="map">
-			<img class="maps" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
-			<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
+			<div class="container-map">
+				<img class="maps" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
+				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
+			
 			<div class="modal-map">
 				<p class="modal-head">
 					NЁRDS DESIGN STUDIO
@@ -169,13 +174,13 @@
 					191186, Санкт-Петербург,<br> 
 					ул. Б. Конюшенная, д. 19/8<br>					
 				</p>
-				<p class="modal-text">
-				тел. +7 (812) 275-75-75
+					<a href="tel:+7 (812) 275-75-75" class="modal-text"> +7 (812) 275-75-75</a>				
 				</p>
-				<button class="modal-button"> напишите нам </button>
-			</div>	
+				<a href="#" class="modal-button"> напишите нам </a>
+			</div>
+			</div>
+			
 		</section>
-		</div>
 		<section class="pop">
 			<div class="pop-up">
 			<h2>Напишите нам</h2>
@@ -202,9 +207,9 @@
 				<button class="close-modal-button" type="button" name="close-button">Закрыть</button>
 			</form>
 			</div>
-
 		</section>
 	</main>
+	<div class="containers">
 	<footer class="site-footer">
 		<ul class="footer-social-item">
 			<li><a class="social social-button-vk" href="#" aria-label="Наша дизайн студия в Вконтакте"></a></li>
@@ -216,5 +221,6 @@
 			Скидка 10% для друзей из социальных сетей.
 		</p>
 	</footer>
+	</div>
 </body>
 </html>
