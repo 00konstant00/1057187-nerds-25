@@ -145,16 +145,16 @@
 				</div>
 			</section>
 			<section class="work">
-				<a href="https://htmlacademy.ru/intensive/htmlcss">
+				<a class="work-site" href="https://htmlacademy.ru/intensive/htmlcss">
 					<img src="img/logo-1.png" width="199" height="68" alt="логотип компании html academy">
 				</a>
-				<a href="#">
+				<a class="work-site" href="#">
 					<img src="img/logo-2.png" width="209" height="90" alt="логотип компании барбершоп Бородинский">
 				</a>
-				<a href="#">
+				<a class="work-site" href="#">
 					<img src="img/logo-3.png" width="185" height="52" alt="логотип компании Пинк">
 				</a>
-					<a href="#">
+					<a class="work-site" href="#">
 				<img src="img/logo-4.png" width="173" height="84" alt="логотип компании Мишка">
 				</a>
 			</section>
@@ -164,15 +164,17 @@
 				<img class="maps" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
 				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
 				<div class="modal-map">
-					<p class="modal-head">
-						NЁRDS DESIGN STUDIO
-					</p>
-					<p class="modal-text">
-						191186, Санкт-Петербург,<br> 
-						ул. Б. Конюшенная, д. 19/8<br>					
-					</p>
-						<a href="tel:+7 (812) 275-75-75" class="modal-text"> +7 (812) 275-75-75</a>				
-					</p>
+					<div class="modal">
+						<p class="modal-head">
+							NЁRDS DESIGN STUDIO
+						</p>
+						<p class="modal-text">
+							191186, Санкт-Петербург,<br> 
+							ул. Б. Конюшенная, д. 19/8<br>					
+						</p>
+							<a href="tel:+78122757575" class="modal-text modal-tel"> тел. +7 (812) 275-75-75</a>				
+						</p>
+					</div>	
 					<a href="#" class="modal-button"> напишите нам </a>
 				</div>
 			</div>
@@ -182,6 +184,7 @@
 				<div class="pop-up">
 					<h2>Напишите нам</h2>
 					<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="feedback-item">
 						<p class="feedback-item-name">
 							<label>
 								Ваше имя:
@@ -194,6 +197,7 @@
 								<input type="text" name="e-mail" placeholder="email@example.com">
 							</label>
 						</p>
+						</div>
 						<p class="feedback-item-text">
 							<label>
 								Текст письма:
@@ -207,8 +211,8 @@
 			</section>
 		</div>	
 	</main>
-	<div class="containers">
-		<footer class="site-footer">
+	<footer class="site-footer">
+		<div class="containers">
 			<ul class="footer-social-item">
 				<li><a class="social social-button-vk" href="#" aria-label="Наша дизайн студия в Вконтакте"></a></li>
 				<li><a class="social social-button-fb" href="#" aria-label="Наша дизайн студия в Фейсбук"></a></li>
