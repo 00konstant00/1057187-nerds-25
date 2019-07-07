@@ -875,11 +875,11 @@ table {
 } 
 
 .catalog-item:first-child {
-margin-top: 75px;
+margin-top: 50px;
 } 
 
 .catalog-item:nth-child(2)  {
-margin-top: 75px;
+margin-top: 50px;
 } 
 
 .catalog-list {
@@ -903,6 +903,26 @@ margin-top: 75px;
   text-transform:uppercase;
 }
 
+.catalog-cont-p {
+  display: flex;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  margin-top:55px;
+  margin-left: 140px;
+  margin-right: 55px; 
+  font-weight:700;
+  font-size: 18px;
+  text-transform:uppercase;
+}
+
+.catalog-cont {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  
+}
+
 .catalog-li {
   display: flex;
   margin-left: 20px;
@@ -913,7 +933,7 @@ margin-top: 75px;
 
 .catalog-li-pr {
   display: flex;
-  padding-left: 245px;
+  padding-left: 52px;
   margin-left: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -935,7 +955,7 @@ margin-top: 75px;
   z-index: 100;
   width: 20px;
   height: 20px;
-  right: -65px;
+  right: -69px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
@@ -947,7 +967,7 @@ margin-top: 75px;
   z-index: 100;
   width: 20px;
   height: 20px;
-  right: -100px;
+  right: -99px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
