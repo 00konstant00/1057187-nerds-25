@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -28,8 +28,9 @@
         	<section class="down-header">
           		Магазин готовых шаблонов
 			</section>
+		</div>	
     </header>
-    <main >
+    <main>
 		<div class="containers">
 			<div class="main-catalog">	
       		<section class="filters">
@@ -115,7 +116,7 @@
     		<section class="catalog">
 				<h2 class="visually-hidden">Список готовых шаблонов</h2>
 				<div class="catalog-cont">
-					<ul class="catalog-cont-list"> Сортировать:
+					<ul class="catalog-cont-list">Сортировать:
 						<li> 
 							<a class="catalog-li-pr" href="#">по цене</a>
 						</li>
@@ -170,7 +171,7 @@
     	      			<img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
     	      			<div class="catalog-item-list">
     	        			<h3 class="catalog-item-title">
-    	          				<a  class="catalog-site"href="Mishka-Hover.html">Mishka</a>
+    	          				<a  class="catalog-site" href="Mishka-Hover.html">Mishka</a>
     	        			</h3>
     	        			<p class="catalog-item-description">
     	          				Интернет-магазин вязаных игрушек
@@ -215,66 +216,72 @@
 			</div>
 		</div>	
 		<section class="map">
-				<div class="container-map">
-					<img class="maps" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
-					<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
-					<div class="modal-map">
-						<div class="modal">
-							<p class="modal-head">
-								NЁRDS DESIGN STUDIO
-							</p>
-							<p class="modal-text">
-								191186, Санкт-Петербург,<br> 
-								ул. Б. Конюшенная, д. 19/8<br>					
-							</p>
-								<a href="tel:+78122757575" class="modal-text modal-tel"> тел. +7 (812) 275-75-75</a>				
-							</p>
-						</div>	
-						<a href="#" class="modal-button"> напишите нам </a>
-					</div>
+			<div class="container-map">
+				<img class="maps" src="img/maps.png" width="1440" height="416" alt=" Адрес: Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 ">
+				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель">
+				<div class="modal-map">
+					<div class="modal">
+						<p class="modal-head">
+							NЁRDS DESIGN STUDIO
+						</p>
+						<p class="modal-text">
+							191186, Санкт-Петербург,<br> 
+							ул. Б. Конюшенная, д. 19/8<br>					
+						</p>
+							<a href="tel:+78122757575" class="modal-text modal-tel"> тел. +7 (812) 275-75-75</a>				
+					</div>	
+					<a href="#" class="modal-button"> напишите нам </a>
 				</div>
-			</section>
-		<div class="containers">
-    		<section class="pop">
+			</div>
+		</section>
+		<section class="pop">
+			<div class="containers">
 				<div class="pop-up">
-    	  			<h2>Напишите нам</h2>
-    	  			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-    	    			<p class="feedback-item">
-    	      				<label>
-    	        				Ваше имя:
-    	        				<input type="text" name="name" placeholder="Имя Фамилия">
-    	      				</label>
-    	    			</p>
-    	    			<p class="feedback-item">
-    	      				<label>
-    	       					 Ваш e-mail:
-    	       						 <input type="text" name="e-mail" placeholder="email@example.com">
-    	      				</label>
-    	    			</p>
-    	    			<p class="feedback-item">
-    	      				<label>
-    	        				Текст письма:
-    	        					<input type="text" name="text" placeholder="В свободной форме">
-    	      				</label>
-    	    			</p>
-    	    			<button class="button" type="submit">Отправить</button>
+					<h2>Напишите нам</h2>
+					<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="feedback-item">
+						<p class="feedback-item-name">
+							<label>
+								Ваше имя:
+								<input type="text" name="name" placeholder="Имя Фамилия">
+							</label>
+						</p>
+						<p class="feedback-item-mail">
+							<label>
+								Ваш e-mail:
+								<input type="text" name="e-mail" placeholder="email@example.com">
+							</label>
+						</p>
+						</div>
+						<p class="feedback-item-text">
+							<label>
+								Текст письма:
+								<textarea name="text" placeholder="В свободной форме" style="margin: 0px; width: 760px; height: 118px;"></textarea>
+							</label>
+						</p>
+						<button class="md-btn" type="submit">Отправить</button>
+						<button class="close-modal-button" type="button" name="close-button">Закрыть</button>
 					</form>
 				</div>
-			</section>
-		</div>	
+			</div>
+		</section>
 	</main>
 	<footer class="site-footer">
-			<div class="containers">
-    			<ul class="footer-social-item">
-      				<li><a class="social social-button-vk" href="#" aria-label="Наша дизайн студия в Вконтакте"></a></li>
-      				<li><a class="social social-button-fb" href="#" aria-label="Наша дизайн студия в Фейсбук"></a></li>
-      				<li><a class="social social-button-in" href="#" aria-label="Наша дизайн студия в Инстаграм"></a></li>
-    			</ul>
-    			<p class="footer-promo">
-      				<b>Давайте дружить,это выгодно!</b>
-      				Скидка 10% для друзей из социальных сетей.
-    			</p>
-	  		</footer>
-		</div>  
-	</body>
+		<div class="containers">
+			<div class="footer"> 
+				<ul class="footer-social-item">
+					<li><a class="social social-button-vk" href="#" aria-label="Наша дизайн студия в Вконтакте"></a></li>
+					<li><a class="social social-button-fb" href="#" aria-label="Наша дизайн студия в Фейсбук"></a></li>
+					<li><a class="social social-button-in" href="#" aria-label="Наша дизайн студия в Инстаграм"></a></li>
+				</ul>
+				<p class="footer-promo">
+					<b>Давайте дружить, это выгодно!</b>
+					Скидка 10% для друзей из социальных сетей.
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/popup.js">
+	</script>	
+</body>
 </html>
