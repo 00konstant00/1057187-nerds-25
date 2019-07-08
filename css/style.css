@@ -4,14 +4,14 @@
 
 *, *::before, *::after { 
   box-sizing: inherit;
-/*! outline: 1px dashed red; */
+/*  outline: 1px dashed red; */
 }
 
 body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto Medium", "Roboto",Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -36,7 +36,15 @@ a {
 }
 
 .site-navigation a {
+  font-family: Roboto Medium;
+  line-height: 30px;
+  font-weight: 300; 
   color: #000000;
+  padding: 0 5px;
+}
+
+.site-navigation a:first-child {
+  padding:0;
 }
 
 .site-navigation a:hover,
@@ -52,6 +60,13 @@ a {
 .site-navigation a:active,
 .user-navigation a:active {
   color: #bdbdbd;
+}
+
+.down-header p {
+  font-family: Roboto Medium;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .service p {
@@ -89,8 +104,8 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  width: 440px;
-  padding: 0;
+  width: 500px;
+  padding: 0 30px;
   padding-top: 58px;
   list-style: none;
 }
@@ -135,7 +150,7 @@ a {
 }
 
 .active {
-  border-bottom: 3px solid #fb565a;
+  border-bottom: 2px solid #fb565a;
 }
 
 .slider {
@@ -175,7 +190,7 @@ a {
   content: ""; 
   position: absolute;
   top: 16px;
-  left: 134px;
+  left: 95px;
   z-index: 1; 
   width: 18px;
   height: 18px;  
@@ -228,7 +243,7 @@ a {
   z-index: 2;
   width: 8px;
   height: 8px;
-  left: 139px;
+  left: 100px;
   top: 21px;
   background-color: inherit;
   border: 2px solid #c1c1c1;
@@ -237,26 +252,27 @@ a {
 
 .slider-item h3 {
   max-width: 600px;
-  margin-top: -12px;
+  margin-top: -11px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
 .slider-item p {
+  color: #283136;
   max-width: 430px;
-  margin-top: -25px;
+  margin-top: -26px;
 }
 
 .slider-item-button {
+  font-family: Roboto Medium;
   display: block;
   width: 240px;
   height: 50px;
-  padding: 13px 0;
+  padding: 5px 5px;
   margin-top: 38px;
-  
   font-size: 16px;
-  line-height: 18px;
+  line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;  
@@ -265,7 +281,11 @@ a {
   border-radius: 3px;
   border: none;
 }
-.button-red,
+
+.button-red{
+  background-color: #fb565a;
+}
+
 .button-red:hover {
   background-color: #e74246;
 }
@@ -278,7 +298,11 @@ a {
   background-color: #d7373b;
 }
 
-.button-green,
+.button-green {
+  background-color: #00ca74;
+}
+
+
 .button-green:hover {
   background-color: #00bc6c;
 }
@@ -291,7 +315,11 @@ a {
   background-color: #00aa62;
 }
 
-.button-yelow,
+.button-yelow {
+  background-color: #efc84a;
+}
+
+
 .button-yelow:hover {
   background-color: #eab534;
 }
@@ -339,8 +367,9 @@ a {
 }
 
 .list-service-item h3 {
+  font-family: Roboto;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 16px;
   font-size: 24px;
   line-height: 30px;
   text-align: left;
@@ -349,23 +378,30 @@ a {
 }
 
 .list-service-description{
+  font-family: Roboto;
+  padding: 1px 50px 1px 0;
   margin: 0;
   margin-top: 18px;
+
 }
 
 .list-service .button {
  display: block;
-  width: 160px;
-  height: 50px;
-  margin: 0;
-  margin-top: 31px;
-  padding: 15px;  
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
+ font-family; Roboto Medium;
+ width: 160px;
+ height: 50px;
+ margin: 0;
+ margin-top: 31px;
+ font-size: 16px;
+ line-height: 50px;
+ color: #ffffff;
+ text-transform: uppercase;
+ text-align: center;
+ text-decoration: none;
   text-decoration: none;  
+ text-decoration: none;
+ font-weight: 500;
+ border-radius: 3px;
 }
 
 
@@ -385,22 +421,28 @@ a {
 }
 
 .abot-us-head {
+  font-family: Roboto Medium;
   font-size: 45px;
   line-height: 45px;
+  padding-right: 130px;
+
   margin: 0;
   margin-top: 75px; 
 }
 
 .about-us-text {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   color: #283136;
   margin: 0;
   margin-top: 30px;
+  padding-right: 120px; 
 }
 
 .about-us-left h3 {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -412,9 +454,10 @@ a {
 }
 
 .about-us li {
+  font-family: Roboto;
   list-style: none;
   font-size: 16px;
-  line-height: 47px;
+  line-height: 46px;
   color: #283136;
   margin: 0;
 
@@ -426,7 +469,7 @@ a {
   content: "";
   position: absolute;
   display: block;
-  margin-top: 19px;
+  margin-top: 21px;
   border-top: 2px solid #fb565a;
   width: 25px;
   left: 1px;
@@ -446,9 +489,10 @@ a {
 }
 
 .about-us-right h2 {
+  font-family: Roboto;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 46px;
   margin-bottom:20px;
   font-size: 16px;
   font-weight: 700;
@@ -479,6 +523,7 @@ table {
 /* words*/
 
 .details { 
+  font-family: Roboto;
   height: 30px;
   line-height: 18px;
   color: #283136;
@@ -496,6 +541,7 @@ table {
  
 .work {
   display: flex;
+  position:relative;
   align-items: center;
   justify-content: space-between;
   border-top: 3px #eeeeee solid;
@@ -516,6 +562,7 @@ table {
   width: 260px;
   height: 180px;
 }
+
  
 .work-site {
   display: flex;
@@ -544,7 +591,7 @@ table {
   content:"";
   position:absolute;
   z-index: 100;
-  border-right: 3px #eeeeee solid;
+  border-right: 2px #eeeeee solid;
   left: -20px;
   top: 63px;
   height: 55px;
@@ -554,11 +601,15 @@ table {
   border: none;
 }
 
+.cont-mod {
+  margin: 0 auto;
+}
 
 .container-map {
   display: flex;
   position: relative;
-  width: 1440px;
+  z-index: 1;
+  /* width: 1440px; */
   padding: 0;
   margin: 0 auto; 
 }
@@ -568,7 +619,15 @@ table {
   position: absolute;
   z-index: 100;
   left: 820px ;
-  top:87px;
+  top:88px;
+}
+
+.frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+
+  border: none;
 }
 
 .modal-map {
@@ -577,8 +636,8 @@ table {
   margin: 0;
   position: absolute;
   z-index: 100;
-  left: 96px;
-  top: 55px;
+  left: 140px;
+  top: 53px;
   width: 320px;
   height: 310px;
   background-color: #ffffff;
@@ -592,28 +651,32 @@ table {
 
 
 .modal-head {
+  font-family: Roboto;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   margin:0;
-  margin-top: 51px;
+  margin-top: 55px;
   padding: 0;
 }
 
 .modal-text {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   color: #666666;
   margin: 0;
-  margin-top: 11px;
+  margin-top: 12px;
   padding: 0;
+  padding-right: 60px;
   text-transform: none;
 }
 
 .modal-tel {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -726,6 +789,7 @@ table {
 }
 
 .modal-button {
+  font-family: Roboto Medium;
   width: 220px;
   height: 55px;
   margin: 0 50px;
@@ -735,6 +799,7 @@ table {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
   border-radius: 3px;
   border: none;
@@ -865,8 +930,10 @@ table {
 .catalog-item {
   position: relative;
   width: 360px;
+  height: 576px;
   margin-left: 140px;
-  margin-bottom: 66px;
+  margin-bottom: 73px;
+  
  }
  
  .catalog-item:nth-child(even) {
@@ -875,11 +942,11 @@ table {
 } 
 
 .catalog-item:first-child {
-margin-top: 50px;
+margin-top: 76px;
 } 
 
 .catalog-item:nth-child(2)  {
-margin-top: 50px;
+margin-top: 76px;
 } 
 
 .catalog-list {
@@ -908,11 +975,12 @@ margin-top: 50px;
   position: relative;
   list-style: none;
   margin: 0;
-  margin-top:55px;
+  margin-top:54px;
   margin-left: 140px;
   margin-right: 55px; 
   font-weight:700;
   font-size: 18px;
+  font-family: Roboto;
   text-transform:uppercase;
 }
 
@@ -987,13 +1055,19 @@ margin-top: 50px;
 }
 
 .catalog-item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   position: absolute;
   z-index: 100;
-  bottom: 0;
+  bottom: 0px;
   width: 360px;
   height: 230px;
   background-color: #eeeeee;
   opacity: 0;
+
 }
 
 .catalog-item:hover .catalog-item-list {
@@ -1007,7 +1081,7 @@ margin-top: 50px;
 .catalog-item::after {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -39px;
   left: 0px;
   width: 360px;
   height: 40px;
@@ -1015,6 +1089,7 @@ margin-top: 50px;
   background-repeat: no-repeat;
   background-position: 100%;
   opacity: 0.12;
+
 }
 
 .catalog-item:hover::after {
@@ -1038,7 +1113,6 @@ margin-top: 50px;
 
 }
 
-
 .pagination-item {
   display: block;
   width: 50px;
@@ -1047,7 +1121,6 @@ margin-top: 50px;
   color: #000000;
   border-radius: 3px;
   line-height: 50px;
-  font-weight: 700; 
   text-align: center;
   margin-right: 9px;
 } 
@@ -1061,7 +1134,6 @@ margin-top: 50px;
   border: 3px solid #dbdbdb;
   border-radius: 3px;
   line-height: 50px;
-  font-weight: 700; 
   text-align: center;
   margin: 0;
   margin-right: 10px;
@@ -1091,7 +1163,6 @@ margin-top: 50px;
   background-color: #eeeeee;
   text-align: center;
   line-height: 50px;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;
@@ -1099,10 +1170,11 @@ margin-top: 50px;
 }
 
 .catalog-site {
+  font-family: Roboto;
   display: block;
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 30px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1121,27 +1193,34 @@ margin-top: 50px;
 }
 
 .catalog-item-description {
+  font-family: Roboto;
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 80px;
-  line-height: 20px;
+  padding: 1px 80px;
+  line-height: 18px;
   margin: 0;
-  margin-top: -10px;
-  margin-bottom: 20px;
+
+  
   text-align: center;
   font-size: 16px;
   color: #666666;
 }
 
+.catalog-item-title {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-button {
-  display: block;  
+  font-family: Roboto Medium;  
   width: 200px;
   height: 50px;
   padding: 0;
   margin: 0 80px;
-  margin-bottom: 25px;
+  margin-bottom: 42px;
+  margin-top: 15px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 50px;
   background-color: #fb565a;
   color: #ffffff;
@@ -1177,10 +1256,10 @@ margin-top: 50px;
 
 .legend-filters {
   margin: 0;
-
   font-size: 18px;
-  font-weight: 700;
+  font-weight:700;
   text-transform:uppercase;
+  font-family: Roboto;
 }
  
 .grid-list {
@@ -1199,16 +1278,21 @@ margin-top: 50px;
 }
 
 .filter-option label {
+  font-family: Roboto;
+
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
+  margin-left: -3px;
+
+
 }
 
 .filter-input-checkbox + label::before {
   content: "";
  position: absolute;
- top: -5px;
+ top: -4px;
  left: -38px;
  width: 28px;
  height: 25px; 
@@ -1220,14 +1304,15 @@ margin-top: 50px;
 
 .filter-input-checkbox:checked + label::before {
  background-image: url("../img/checkbox-on.svg");
- opacity: 1;
+ opacity: 0.4;
+ left: -36px;
 }
 
 .filter-input-radio + label::before {
  content: "";
  position: absolute;
- top: -5px;
- left: -38px;
+ top: -4px;
+ left: -39px;
  width: 28px;
  height: 25px;
  background-image: url("../img/radio-off.svg");
@@ -1238,17 +1323,18 @@ margin-top: 50px;
 
 .filter-input-radio:checked + label::before {
  background-image: url("../img/radio-on.svg");
- opacity: 1;
+ opacity: 0.5;
 }
 
 
 .filter-button {
+font-family: Roboto Medium;  
 width: 260px;
 height: 50px;
 padding: 0;
 margin: 0;
 font-size: 16px;
-font-weight: 700;
+font-weight: 500;
 line-height: 50px;
 background-color: #eeeeee;
 color: #000000;
@@ -1312,7 +1398,7 @@ border: none;
   width: 20px;
   height: 20px;
   padding: 0;
-  border: 7px solid #ffffff;
+  border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
@@ -1372,6 +1458,7 @@ border: none;
 }
 
 .footer-promo {
+  font-family: Roboto;
   display: flex;
   flex-wrap: wrap;
   width: 560px;
@@ -1449,7 +1536,8 @@ border: none;
 }
 
 .footer {
-  display: flex;  
+  display: flex;
+  height: 105px;  
 }
 
 .modal-show {
