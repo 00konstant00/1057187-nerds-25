@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  font-family: "Roboto Medium", "Roboto",Arial, sans-serif;
+  font-family: "Roboto",Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -28,6 +28,7 @@ a {
 
 .containers {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   width: 1200px;
@@ -36,7 +37,6 @@ a {
 }
 
 .site-navigation a {
-  font-family: Roboto Medium;
   line-height: 30px;
   font-weight: 300; 
   color: #000000;
@@ -63,7 +63,6 @@ a {
 }
 
 .down-header p {
-  font-family: Roboto Medium;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -124,7 +123,6 @@ a {
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-
 }
 
 .login-link::before {
@@ -153,7 +151,7 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
-.slider {
+.slider-containers {
   position: relative;
 }
 
@@ -166,8 +164,8 @@ a {
   position: absolute;
   display :flex;
   justify-content: space-between;
-  left: 43%;
-  bottom: 110px;
+  left: 50%;
+  bottom: 95px;
   z-index: 100;
   width: 163px;
   height: 21px;
@@ -189,16 +187,14 @@ a {
 .slider-controls label::after {
   content: ""; 
   position: absolute;
-  top: 16px;
-  left: 95px;
+  top: 0;
+  left: 0;
   z-index: 1; 
   width: 18px;
   height: 18px;  
   background: #ffffff; 
   border-radius: 50%;
 }
-
-
 
 .slider-item {
   display: none;
@@ -243,8 +239,8 @@ a {
   z-index: 2;
   width: 8px;
   height: 8px;
-  left: 100px;
-  top: 21px;
+  left: 5px;
+  top: 5px;
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
@@ -265,7 +261,6 @@ a {
 }
 
 .slider-item-button {
-  font-family: Roboto Medium;
   display: block;
   width: 240px;
   height: 50px;
@@ -337,11 +332,11 @@ a {
 }
 
 .footer-social-item a:focus {
-   background-color: #e74246;
+  background-color: #e74246;
 }
 
 .footer-social-item a:active {
-   background-color: #d7373b;
+  background-color: #d7373b;
 }
 
 .service {
@@ -367,7 +362,6 @@ a {
 }
 
 .list-service-item h3 {
-  font-family: Roboto;
   margin: 0;
   margin-top: 16px;
   font-size: 24px;
@@ -378,7 +372,6 @@ a {
 }
 
 .list-service-description{
-  font-family: Roboto;
   padding: 1px 50px 1px 0;
   margin: 0;
   margin-top: 18px;
@@ -386,7 +379,6 @@ a {
 
 .list-service .button {
  display: block;
- font-family; Roboto Medium;
  width: 160px;
  height: 50px;
  margin: 0;
@@ -397,12 +389,11 @@ a {
  text-transform: uppercase;
  text-align: center;
  text-decoration: none;
-  text-decoration: none;  
+ text-decoration: none;  
  text-decoration: none;
  font-weight: 500;
  border-radius: 3px;
 }
-
 
 .about-us {
   display: flex;
@@ -420,17 +411,14 @@ a {
 }
 
 .abot-us-head {
-  font-family: Roboto Medium;
   font-size: 45px;
   line-height: 45px;
   padding-right: 130px;
-
   margin: 0;
   margin-top: 75px; 
 }
 
 .about-us-text {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -441,7 +429,6 @@ a {
 }
 
 .about-us-left h3 {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -453,14 +440,11 @@ a {
 }
 
 .about-us li {
-  font-family: Roboto;
   list-style: none;
   font-size: 16px;
   line-height: 46px;
   color: #283136;
   margin: 0;
-
-
   margin-left: -3px;
 }
 
@@ -473,8 +457,6 @@ a {
   width: 25px;
   left: 1px;
  }
- 
-
 
 .about-us-right {
   display: flex;
@@ -488,7 +470,6 @@ a {
 }
 
 .about-us-right h2 {
-  font-family: Roboto;
   margin: 0;
   padding: 0;
   margin-top: 46px;
@@ -498,8 +479,6 @@ a {
   text-transform: uppercase;
 }
 
-/* numbers */
- 
 .percentages {
   height: 65px;
   font-size: 45px;
@@ -518,18 +497,15 @@ table {
  
 }
 
-
-/* words*/
-
 .details { 
-  font-family: Roboto;
   height: 30px;
   line-height: 18px;
   color: #283136;
 }
  
-
-
+.sup {
+  font-size: 28px;
+}
 
 .about-us-right-picture {
   display: block;
@@ -545,12 +521,10 @@ table {
   justify-content: space-between;
   border-top: 3px #eeeeee solid;
   border-bottom: 3px #eeeeee solid;
-
   min-height: 180px;
   min-width: 1160px;
   padding: 0 ;
   margin: 50px 0 75px 0;
-  
 }
 
 .work-cont {
@@ -562,7 +536,6 @@ table {
   height: 180px;
 }
 
- 
 .work-site {
   display: flex;
   align-items: center;
@@ -604,39 +577,41 @@ table {
   margin: 0 auto;
 }
 
-.container-map {
-  display: flex;
+.map {
   position: relative;
-  z-index: 1;
-  /* width: 1440px; */
-  padding: 0;
-  margin: 0 auto; 
 }
 
-.map-marker {
-  display: flex;
+.map-containers {
+  position: relative;
+}
+
+.iframe {
   position: absolute;
-  z-index: 100;
-  left: 820px ;
-  top:88px;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 416px;
+  border: none;
+}
+
+.maps-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .frame {
   position: relative;
   z-index: 2;
   width: 100%;
-
   border: none;
 }
 
 .modal-map {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   position: absolute;
-  z-index: 100;
-  left: 140px;
-  top: 53px;
+  top: -365px;
   width: 320px;
   height: 310px;
   background-color: #ffffff;
@@ -648,9 +623,7 @@ table {
   padding-left: 50px;
 }
 
-
 .modal-head {
-  font-family: Roboto;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
@@ -660,7 +633,6 @@ table {
 }
 
 .modal-text {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -678,13 +650,12 @@ table {
   margin-bottom: 20px;
 }
 
-
 .pop {
   position: relative;
 }
 
 .pop-up {
-  display:none;
+  display: none;
   position: fixed;
   flex-wrap: wrap;
   top: 50%;
@@ -700,20 +671,19 @@ table {
 }
 
 .feedback-item {
-  display:flex
+  display:flex;
 }
 
 .feedback-item-mail{
   margin:0;
+  padding:0;
   margin-left: 40px;
-  margin-top:40px;
- 
+  margin-top: 25px;
 }
 
 .feedback-item-name{
-  margin:0;
-  margin-top:40px;
- 
+  margin: 0;
+  margin-top: 25px;
 }
 
 .feedback-item input {
@@ -723,10 +693,8 @@ table {
 
 .feedback-item-text {
   margin: 0;
-  margin-top:25px;
+  margin-top:37px;
 }
-
-
 
 .close-modal-button {
   position: absolute;
@@ -774,21 +742,19 @@ table {
   background-color: #ffeeee;
 }
 
-
 .pop h2 {
   font-size: 45px;
   font-weight: 700;
   margin: 0;
   padding:0;
+  margin-bottom: 25px;
 }
 
 .pop label {
   font-weight: 700;
- 
 }
 
 .modal-button {
-  font-family: Roboto Medium;
   width: 220px;
   height: 55px;
   margin: 0 50px;
@@ -805,7 +771,7 @@ table {
 }
 
 .md-btn {
-  width: 220px;
+  width: 260px;
   height: 55px;
   margin: 0;
   font-size: 16px;
@@ -817,7 +783,7 @@ table {
   text-decoration: none;
   border-radius: 3px;
   border: none;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .feedback-item-text input {
@@ -827,8 +793,7 @@ table {
 
 .feedback-form input {
   font-size: 16px;
-  padding: 0 15px;
-  margin-top: 15px;
+  padding:0 14px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
@@ -836,10 +801,10 @@ table {
 .feedback-form textarea {
   font-size: 16px;
   padding: 15px 15px;
-  margin-top: 15px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
+
 .feedback-form input:hover {
  border-color: #b4b9bb;
 }
@@ -932,7 +897,6 @@ table {
   height: 576px;
   margin-left: 140px;
   margin-bottom: 73px;
-  
  }
  
  .catalog-item:nth-child(even) {
@@ -941,11 +905,11 @@ table {
 } 
 
 .catalog-item:first-child {
-margin-top: 76px;
+  margin-top: 76px;
 } 
 
 .catalog-item:nth-child(2)  {
-margin-top: 76px;
+  margin-top: 76px;
 } 
 
 .catalog-list {
@@ -979,7 +943,6 @@ margin-top: 76px;
   margin-right: 55px; 
   font-weight:700;
   font-size: 18px;
-  font-family: Roboto;
   text-transform:uppercase;
 }
 
@@ -987,7 +950,6 @@ margin-top: 76px;
   display: flex;
   padding: 0;
   margin: 0;
-  
 }
 
 .catalog-li {
@@ -1013,8 +975,6 @@ margin-top: 76px;
 .catalog-li:active {
   opacity: 1;
 }
-
-
 
 .icon-up::after {
   content: "";
@@ -1063,10 +1023,9 @@ margin-top: 76px;
   z-index: 100;
   bottom: 0px;
   width: 360px;
-  height: 230px;
+  min-height: 230px;
   background-color: #eeeeee;
   opacity: 0;
-
 }
 
 .catalog-item:hover .catalog-item-list {
@@ -1088,7 +1047,6 @@ margin-top: 76px;
   background-repeat: no-repeat;
   background-position: 100%;
   opacity: 0.12;
-
 }
 
 .catalog-item:hover::after {
@@ -1109,7 +1067,6 @@ margin-top: 76px;
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .pagination-item {
@@ -1151,7 +1108,6 @@ margin-top: 76px;
   box-shadow: 0 -3px rgba(122,122,122,0.1);
 }
 
-
 .pagination-button {
   display: block;
   margin: 0;
@@ -1169,7 +1125,6 @@ margin-top: 76px;
 }
 
 .catalog-site {
-  font-family: Roboto;
   display: block;
   padding: 0;
   margin: 0;
@@ -1192,14 +1147,11 @@ margin-top: 76px;
 }
 
 .catalog-item-description {
-  font-family: Roboto;
   display: flex;
   flex-wrap: wrap;
   padding: 1px 80px;
   line-height: 18px;
   margin: 0;
-
-  
   text-align: center;
   font-size: 16px;
   color: #666666;
@@ -1211,7 +1163,6 @@ margin-top: 76px;
 }
 
 .catalog-button {
-  font-family: Roboto Medium;  
   width: 200px;
   height: 50px;
   padding: 0;
@@ -1258,7 +1209,6 @@ margin-top: 76px;
   font-size: 18px;
   font-weight:700;
   text-transform:uppercase;
-  font-family: Roboto;
 }
  
 .grid-list {
@@ -1277,71 +1227,66 @@ margin-top: 76px;
 }
 
 .filter-option label {
-  font-family: Roboto;
-
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
   margin-left: -3px;
-
-
 }
 
 .filter-input-checkbox + label::before {
   content: "";
- position: absolute;
- top: -4px;
- left: -38px;
- width: 28px;
- height: 25px; 
- background-image: url("../img/checkbox-off.svg");
- background-repeat: no-repeat;
- background-position: center;
- opacity: 0.4; 
+  position: absolute;
+  top: -4px;
+  left: -38px;
+  width: 28px;
+  height: 25px; 
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4; 
 }
 
 .filter-input-checkbox:checked + label::before {
- background-image: url("../img/checkbox-on.svg");
- opacity: 0.4;
- left: -36px;
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+  left: -36px;
 }
 
 .filter-input-radio + label::before {
- content: "";
- position: absolute;
- top: -4px;
- left: -39px;
- width: 28px;
- height: 25px;
- background-image: url("../img/radio-off.svg");
- background-repeat: no-repeat;
- background-position: center;
- opacity: 0.4;
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -39px;
+  width: 28px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::before {
- background-image: url("../img/radio-on.svg");
- opacity: 0.5;
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.5;
 }
 
 
 .filter-button {
-font-family: Roboto Medium;  
-width: 260px;
-height: 50px;
-padding: 0;
-margin: 0;
-font-size: 16px;
-font-weight: 500;
-line-height: 50px;
-background-color: #eeeeee;
-color: #000000;
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
-border-radius: 3px;
-border: none;
+  width: 260px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
 }
 
 .filter-button:hover{
@@ -1412,7 +1357,6 @@ border: none;
   left: 160px;
 }
 
-
 .price-controls {
   font-size: 0;
 }
@@ -1457,7 +1401,6 @@ border: none;
 }
 
 .footer-promo {
-  font-family: Roboto;
   display: flex;
   flex-wrap: wrap;
   width: 560px;
@@ -1489,7 +1432,6 @@ border: none;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .social-button-fb::before {
   content: "";
