@@ -38,7 +38,7 @@ a {
 
 .site-navigation a {
   line-height: 30px;
-  font-weight: 300; 
+  font-weight: 500; 
   color: #000000;
   padding: 0 5px;
 }
@@ -415,7 +415,8 @@ a {
   line-height: 45px;
   padding-right: 130px;
   margin: 0;
-  margin-top: 75px; 
+  margin-top: 75px;
+  font-weight: 500; 
 }
 
 .about-us-text {
