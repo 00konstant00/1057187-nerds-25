@@ -897,7 +897,7 @@ table {
   width: 360px;
   height: 576px;
   margin-left: 140px;
-  margin-bottom: 73px;
+  margin-bottom: 70px;
  }
  
  .catalog-item:nth-child(even) {
@@ -926,7 +926,7 @@ table {
   display: flex;
   position: relative;
   list-style: none;
-  margin-top:55px;
+  margin-top:57px;
   margin-left: 100px;
   margin-right: 55px;
   font-weight:700;
@@ -955,7 +955,8 @@ table {
 
 .catalog-li {
   display: flex;
-  margin-left: 20px;
+  margin-left: 25px;
+
   font-size: 14px;
   font-weight: 500;
   opacity:0.3;
@@ -983,7 +984,7 @@ table {
   z-index: 100;
   width: 20px;
   height: 20px;
-  right: -69px;
+  right: -59px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
@@ -995,7 +996,7 @@ table {
   z-index: 100;
   width: 20px;
   height: 20px;
-  right: -99px;
+  right: -88px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
@@ -1207,6 +1208,7 @@ table {
 
 .legend-filters {
   margin: 0;
+
   font-size: 18px;
   font-weight:700;
   text-transform:uppercase;
