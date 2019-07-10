@@ -4,14 +4,13 @@
 
 *, *::before, *::after { 
   box-sizing: inherit;
-/*  outline: 1px dashed red; */
 }
 
 body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  font-family: "Roboto",Arial, sans-serif;
+  font-family: Roboto ,Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -177,6 +176,7 @@ a {
 .slider-controls label {
   position: relative; 
   display: inline-block;
+  vertical-align:middle;
   width: 18px;
   height: 18px;
   padding: 8px;  
@@ -699,10 +699,10 @@ table {
 
 .close-modal-button {
   position: absolute;
-  top: 100px;
+  top: 70px;
   right: 90px;
   width: 22px;
-  height: 22px;
+  height: 28px;
   font-size: 0;
   background-color: transparent;
   border: 0;
@@ -714,9 +714,9 @@ table {
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
+  left: -4px;
+  width: 25px;
+  height: 4px;
   background-color: #fecccd;
 }
 
@@ -759,17 +759,30 @@ table {
   width: 220px;
   height: 55px;
   margin: 0 50px;
+  padding-top: 20px;
   font-size: 16px;
-  line-height: 55px;
+  line-height: 18px;
   background-color: #fb565a;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  justify-content: center;
   text-decoration: none;
   border-radius: 3px;
   border: none;
 }
+
+.modal-button:hover {
+  background-color: #e74246;
+}
+
+.modal-button:focus {
+  background-color: #fb565a;
+}
+
+.modal-button:active {
+  background-color: #d7373b;
+}
+
 
 .md-btn {
   width: 260px;
@@ -897,7 +910,7 @@ table {
   width: 360px;
   height: 576px;
   margin-left: 140px;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
  }
  
  .catalog-item:nth-child(even) {
@@ -906,11 +919,11 @@ table {
 } 
 
 .catalog-item:first-child {
-  margin-top: 76px;
+  margin-top: 74px;
 } 
 
 .catalog-item:nth-child(2)  {
-  margin-top: 76px;
+  margin-top: 74px;
 } 
 
 .catalog-list {
@@ -959,7 +972,7 @@ table {
 
   font-size: 14px;
   font-weight: 500;
-  opacity:0.3;
+  opacity: 0.2;
 }
 
 .catalog-li-pr {
@@ -967,7 +980,8 @@ table {
   padding-left: 52px;
   margin-left: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
+ 
 }
 
 .catalog-li:hover {
@@ -988,6 +1002,7 @@ table {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
+  opacity: 0.2;
 }
 
 .icon-up::before {
@@ -1000,11 +1015,11 @@ table {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: 100%;
-  opacity: 0.4
+  opacity: 0.2;
 }
 
 .icon-up:hover{
-  opacity: 0.6;
+  opacity: 0;
 }
 
 .icon-up:active{
@@ -1126,13 +1141,28 @@ table {
   border: none;
 }
 
+.pagination-button:hover{
+  background-color: #dfdfdf;
+}
+
+.pagination-button:focus{
+  background-color: #eeeeee;
+}
+
+.pagination-button:active{
+  background-color: #d5d5d5;
+  box-shadow: 0 -3px rgba(122,122,122,0.1);
+}
+
+
 .catalog-site {
   display: block;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
   font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -1172,7 +1202,7 @@ table {
   margin-bottom: 42px;
   margin-top: 15px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: ;
   line-height: 50px;
   background-color: #fb565a;
   color: #ffffff;
@@ -1282,7 +1312,7 @@ table {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 18px;
   background-color: #eeeeee;
   color: #000000;
   text-transform: uppercase;
@@ -1368,6 +1398,7 @@ table {
   display: inline-block;
   width: 50%;
   font-size: 16px;
+  vertical-align:middle;
   text-transform: uppercase;
 }
 
@@ -1392,7 +1423,7 @@ table {
  .site-footer {
   display: flex;
   align-items: center;
-  margin-top: 63px;
+  height: 225px;
 }
 
 .footer-social-item {
